@@ -1,0 +1,4 @@
+﻿pos_x,pos_y,rotation,side,designator,mpn,pack,footprint,value,mount_type
+124.467378,-90.082,-90.0,top,J1,671-0801,,6710801,VIC-20 S-Video,tht
+108.017378,-80.922,-90.0,top,J2,,,57492301,Mini-DIN-4,tht
+111.3,-94.32,0.0,top,J3,SJ3-350820B-TR,,SJ3350820BTR,Audio Out,tht
