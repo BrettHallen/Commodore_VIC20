@@ -88,7 +88,7 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "ignore",
+        "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
@@ -105,7 +105,7 @@
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
-        "starved_thermal": "ignore",
+        "starved_thermal": "error",
         "text_height": "warning",
         "text_on_edge_cuts": "error",
         "text_thickness": "warning",
@@ -188,7 +188,7 @@
       ],
       "track_widths": [
         0.0,
-        0.5
+        1.6
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -445,7 +445,7 @@
       "pin_not_connected": "error",
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
-      "power_pin_not_driven": "ignore",
+      "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
@@ -465,7 +465,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "VIC20_Internal_32KB_RAM.kicad_pro",
+    "filename": "DIP-16_Breakout.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -625,7 +625,7 @@
   },
   "sheets": [
     [
-      "1763e7b2-f54b-416d-8f50-31aab7b51e8a",
+      "99b9ffce-04d4-4680-89dd-582d239bc7e1",
       "Root"
     ]
   ],
