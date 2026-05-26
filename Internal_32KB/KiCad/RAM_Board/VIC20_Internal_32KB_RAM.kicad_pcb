@@ -177,14 +177,13 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 1.25 2.25 0)
-			(layer "F.Fab")
-			(hide yes)
+			(at 6.35 0 0)
+			(layer "F.SilkS")
 			(uuid "b1c775e9-c4f3-45f5-844f-8c5e9d1ac93f")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
+					(thickness 0.125)
 				)
 			)
 		)
@@ -362,14 +361,13 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 1.25 2.25 0)
-			(layer "F.Fab")
-			(hide yes)
+			(at 6.35 0 0)
+			(layer "F.SilkS")
 			(uuid "c762991d-fb2f-4597-b39f-e3092d238171")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
+					(thickness 0.125)
 				)
 			)
 		)
@@ -529,7 +527,6 @@
 		)
 	)
 	(footprint "Package_DIP:DIP-18_W7.62mm"
-		(locked yes)
 		(layer "F.Cu")
 		(uuid "415214fc-7e0f-46fa-9df6-1443d89773b2")
 		(at 100.137 71.635)
@@ -588,6 +585,26 @@
 		(sheetfile "VIC20_Internal_32KB_RAM.kicad_sch")
 		(attr through_hole)
 		(fp_line
+			(start -1.27 -1.33)
+			(end -1.27 21.65)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4d633a30-0474-49b0-83e7-8752c40d6ef8")
+		)
+		(fp_line
+			(start 1.16 -1.33)
+			(end -1.27 -1.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ed0010ed-9919-44c7-98a6-8e50269c2979")
+		)
+		(fp_line
 			(start 1.16 -1.33)
 			(end 1.16 21.65)
 			(stroke
@@ -599,33 +616,13 @@
 		)
 		(fp_line
 			(start 1.16 21.65)
-			(end 6.46 21.65)
+			(end -1.27 21.65)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "e419fd3a-b724-4a42-83de-0323178cf780")
-		)
-		(fp_line
-			(start 2.81 -1.33)
-			(end 1.16 -1.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "ed0010ed-9919-44c7-98a6-8e50269c2979")
-		)
-		(fp_line
-			(start 6.46 -1.33)
-			(end 4.81 -1.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "37c46736-fc33-4822-ac22-06961405298f")
+			(uuid "cefe4af5-f480-4ddb-8435-15cae7cfd96e")
 		)
 		(fp_line
 			(start 6.46 21.65)
@@ -637,16 +634,35 @@
 			(layer "F.SilkS")
 			(uuid "acb56660-88f2-4ce2-8126-c072702de64b")
 		)
-		(fp_arc
-			(start 4.81 -1.33)
-			(mid 3.81 -0.33)
-			(end 2.81 -1.33)
+		(fp_line
+			(start 8.89 -1.33)
+			(end 6.46 -1.33)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "6246308c-0663-42f8-a058-dc6395719382")
+			(uuid "37c46736-fc33-4822-ac22-06961405298f")
+		)
+		(fp_line
+			(start 8.89 21.65)
+			(end 6.46 21.65)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5cbc1464-a212-4a4d-942a-39c394952f6b")
+		)
+		(fp_line
+			(start 8.89 21.65)
+			(end 8.89 -1.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fafcce9e-1019-41c0-9ec9-3754ef64f969")
 		)
 		(fp_rect
 			(start -1.06 -1.52)
@@ -951,14 +967,13 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 1.25 2.25 0)
-			(layer "F.Fab")
-			(hide yes)
+			(at 6.35 0 0)
+			(layer "F.SilkS")
 			(uuid "e6f9aad7-c0c5-4319-adfa-8ebe07863c79")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
+					(thickness 0.125)
 				)
 			)
 		)
@@ -1465,7 +1480,6 @@
 		)
 	)
 	(footprint "Package_DIP:DIP-18_W7.62mm"
-		(locked yes)
 		(layer "F.Cu")
 		(uuid "48b07157-f458-4b4b-a774-53b0674a0584")
 		(at 100.137 40.635)
@@ -1524,6 +1538,26 @@
 		(sheetfile "VIC20_Internal_32KB_RAM.kicad_sch")
 		(attr through_hole)
 		(fp_line
+			(start -1.27 -1.33)
+			(end -1.27 21.65)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "bfd8d109-4658-481c-8bf4-5a402ac43b92")
+		)
+		(fp_line
+			(start 1.16 -1.33)
+			(end -1.27 -1.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3796c5a5-a89b-411d-b504-88718cf477e4")
+		)
+		(fp_line
 			(start 1.16 -1.33)
 			(end 1.16 21.65)
 			(stroke
@@ -1535,33 +1569,13 @@
 		)
 		(fp_line
 			(start 1.16 21.65)
-			(end 6.46 21.65)
+			(end -1.27 21.65)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "15b284b6-fb26-47fa-98a4-de82e1ec2e83")
-		)
-		(fp_line
-			(start 2.81 -1.33)
-			(end 1.16 -1.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "3796c5a5-a89b-411d-b504-88718cf477e4")
-		)
-		(fp_line
-			(start 6.46 -1.33)
-			(end 4.81 -1.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "b2868c5c-0206-4146-b696-99fb3adff6b0")
+			(uuid "4442624e-73b2-40d5-a31c-a7cb71eb2b46")
 		)
 		(fp_line
 			(start 6.46 21.65)
@@ -1573,16 +1587,35 @@
 			(layer "F.SilkS")
 			(uuid "d627a828-234e-43c6-99f0-786a9d6e2bca")
 		)
-		(fp_arc
-			(start 4.81 -1.33)
-			(mid 3.81 -0.33)
-			(end 2.81 -1.33)
+		(fp_line
+			(start 8.89 -1.33)
+			(end 6.46 -1.33)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "c8c5a265-af65-4394-b2fb-6cac341f04d6")
+			(uuid "b2868c5c-0206-4146-b696-99fb3adff6b0")
+		)
+		(fp_line
+			(start 8.89 21.65)
+			(end 6.46 21.65)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ea9270f1-b7b3-4aa1-8f93-c7844388d860")
+		)
+		(fp_line
+			(start 8.89 21.65)
+			(end 8.89 -1.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "cfd22714-61b2-45ad-a54c-1962dc15fb78")
 		)
 		(fp_rect
 			(start -1.06 -1.52)
@@ -2623,12 +2656,13 @@
 				)
 			)
 		)
-		(pad "1" thru_hole rect
+		(pad "1" thru_hole roundrect
 			(at 0 0)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(roundrect_rratio 0.1470588235)
 			(net 12 "/CA13")
 			(pinfunction "Pin_1")
 			(pintype "passive")
@@ -3022,12 +3056,13 @@
 				)
 			)
 		)
-		(pad "1" thru_hole rect
+		(pad "1" thru_hole roundrect
 			(at 0 0)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(roundrect_rratio 0.1470588235)
 			(net 18 "/VA10")
 			(pinfunction "Pin_1")
 			(pintype "passive")
@@ -3456,7 +3491,7 @@
 			)
 		)
 		(property "Value" "200nF"
-			(at -3.81 0 0)
+			(at 6.35 0 0)
 			(layer "F.SilkS")
 			(uuid "90b1e669-2ac0-48eb-b675-002f58fbe6dc")
 			(effects
@@ -4021,14 +4056,13 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 1.25 2.25 0)
-			(layer "F.Fab")
-			(hide yes)
+			(at 6.35 0 0)
+			(layer "F.SilkS")
 			(uuid "ab037d75-fce2-4e6d-99de-3001b760f494")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
+					(thickness 0.125)
 				)
 			)
 		)
@@ -6646,8 +6680,8 @@
 		(layer "Edge.Cuts")
 		(uuid "0730859d-24d6-454a-9429-c03c7807eee3")
 	)
-	(gr_text "Disable"
-		(at 101.477 69.63 0)
+	(gr_text "Disable Switch"
+		(at 98.937 69.63 0)
 		(layer "F.SilkS")
 		(uuid "a7d70966-141c-4909-9905-7d054dbd9b82")
 		(effects
@@ -6672,7 +6706,7 @@
 		)
 	)
 	(gr_text "Internal 32KB RAM \nExpansion for \nVIC-20 (Rev A)"
-		(at 109.732 82.965 0)
+		(at 121.162 82.33 0)
 		(layer "F.SilkS")
 		(uuid "ca35fc33-e992-4bab-935c-d28a1c570bb7")
 		(effects
@@ -6681,7 +6715,127 @@
 				(thickness 0.3)
 				(bold yes)
 			)
-			(justify left bottom)
+			(justify bottom)
+		)
+	)
+	(gr_text "Triple 3-Input NAND Gate"
+		(at 95.127 63.28 0)
+		(layer "B.SilkS")
+		(uuid "26516d82-1d95-4e5d-b115-afe89aca5671")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "To/From VIC"
+		(at 68.457 41.69 90)
+		(layer "B.SilkS")
+		(uuid "05652152-00ff-406e-b32a-30e195d9e05e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "To/From VIC"
+		(at 68.457 76.615 90)
+		(layer "B.SilkS")
+		(uuid "d3cf9d35-3679-4caa-a2d1-4deb03d671ac")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "3-to-8 Decoder"
+		(at 81.157 40.42 90)
+		(layer "B.SilkS")
+		(uuid "d4ace39f-16de-4a09-9c7b-13b1c478afa1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "3-to-8 Decoder"
+		(at 81.157 74.71 90)
+		(layer "B.SilkS")
+		(uuid "66adda14-92cd-468d-ba54-d736fb2ab934")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "8-Input NAND Gate"
+		(at 91.952 40.42 90)
+		(layer "B.SilkS")
+		(uuid "65ec98a7-9be9-4c3f-8e9a-7ea84dddce08")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "Quad 2-Input Multiplexer"
+		(at 91.952 71.535 90)
+		(layer "B.SilkS")
+		(uuid "b0ceb51e-aab3-460c-97b5-e87c3b37758a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "2114 SRAM Socket"
+		(at 104.652 43.595 90)
+		(layer "B.SilkS")
+		(uuid "253b46ee-254a-4710-b645-39a63c2cda58")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "2114 SRAM Socket"
+		(at 104.652 74.71 90)
+		(layer "B.SilkS")
+		(uuid "6ffcae69-c45b-4c1a-8e62-63337ec8989b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "32KB SRAM"
+		(at 121.162 51.85 90)
+		(layer "B.SilkS")
+		(uuid "af36e29c-e306-4db8-b2fd-432493ea2eef")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
 		)
 	)
 	(gr_text "26-MAY-2026: Pending testing"
