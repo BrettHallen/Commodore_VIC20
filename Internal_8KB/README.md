@@ -1,7 +1,8 @@
 # Internal 8KB RAM Expansion
 My attempt to create a simple internal RAM upgrade board for the original VIC-20 (two-prong power, not the CR).  And, I'm not touching the single 2114 used for the colour RAM.<br>
 
-NOTE: This is currently ... 12-May-2025 ... still a work-in-progress.  The design works, but I'm still tweaking it!
+## UPDATE 26-MAY-2026
+I've [redesigned](/Internal_8KB_New) the 8KB expansion based on my 32KB design.<br>
 
 ## Purpose
 - Save having to source replacement 2114 chips in case RAM is faulty;
