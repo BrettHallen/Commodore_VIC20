@@ -25,12 +25,11 @@ BTW, yes I know there are boards out there that already do this.  I've not had m
 My attempt to replace the VIC's built in 5KB of RAM (ten 2114 chips) with a single 8KB chip, with an extra 3KB RAM as a free bonus.
 
 ![3D view of RAM upgrade board](/Internal_8KB/Images/VIC-20_BLK0_RAM_Expansion.png)
-![3D view of 74LS138 board](/Internal_32KB/Images/VIC-20_RAM_Decoder_74LS138.png)
 
 ## [Internal 32KB RAM Expansion](/Internal_32KB/) - DESIGNED
-Based on the working 8KB internal RAM expansion, adds also BLK1/2/3 expansion that can be switched on/off from outside the case.
+Let's see if we can make a FAT VIC with a full 32KB internal RAM that can be disabled externally when required.
 
-![3D view of RAM upgrade board](/Internal_32KB/Images/VIC-20_Internal_32KB.png)
+![3D view of RAM upgrade board](/Internal_32KB/VIC-20_Internal_32KB_3D.png)
 
 ## [6502 to W65C02S Daughterboard](/6502-to-65C02/) - UNTESTED
 Unlike the 6522 VIAs that can be directly swapped for modern CMOS 65C22s from WDC, the W65C02S can't be directly swapped - a daughterboard is required to buffer the data bus signals and also handle some other signals/pins that differ.
