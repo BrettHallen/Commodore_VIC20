@@ -1,0 +1,9 @@
+﻿Designator,Quantity,Value,Footprint,Package,MPN,DNP,Mount_Type,Description
+"C1, C2, C3, C4",4,100nF,C_Disc_D3.0mm_W2.0mm_P2.50mm,,,,tht,Unpolarized capacitor
+J1,1,RAM Decoder,PinHeader_2x08_P2.54mm_Vertical,,,,tht,"Generic connector, double row, 02x08, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+J2,1,UD4,DIP-18_W7.62mm,,,,tht,"Generic connector, double row, 02x09, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+J3,1,UE4,DIP-18_W7.62mm,,,,tht,"Generic connector, double row, 02x09, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+U1,1,74HCT04,DIP-14_W7.62mm,,,,tht,Hex Inverter
+U2,1,74HCT138,DIP-16_W7.62mm,,,,tht,"3-to-8 line decoder/multiplexer inverting, DIP-16/SOIC-16/SSOP-16"
+U3,1,62256,DIP-28_W15.24mm,,,,tht,"32,768-word × 8-bit High Speed CMOS Static RAM, 70ns, DIP-28"
+U4,1,74HCT30,DIP-14_W7.62mm,,,,tht,8-input NAND
