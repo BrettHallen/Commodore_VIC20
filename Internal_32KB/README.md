@@ -1,6 +1,8 @@
 # Internal 32KB RAM Expansion
 My attempt to create a FAT VIC with a full 32KB internal RAM expansion without need for an external cartridge.<br>
 
+Requires two [DIP-16 breakout boards](https://github.com/BrettHallen/Conversion_Boards/tree/main/DIP-16_Breakout) to replace the 74LS138 decoders.<br>
+
 ## Status
 26-May-2026: complete re-design of my original idea, pending farbication & testing
 
@@ -71,6 +73,3 @@ This is done by relocating the 74LS138 to the expansion daughterboard and using 
 We should be able to fill in the BLK1/2/3 RAM by intercepting the associated ~BLK1, ~BLK2 and ~BLK3 select signals from the BLK decoder and using as the select signal for our RAM.<br>
 
 Importantly we want to also be able to disable this additional RAM to allow software designed for the unexpanded/+3KB expanded VIC-20 to work correctly.  This can be done by connecting the ~BLK0/~BLK1/~BLK2 select signals via a multiplexor connected to an external switch that determines if the ~BLK1/2/3 select signals are passed back to the VIC or not.<br>
-
-
-
