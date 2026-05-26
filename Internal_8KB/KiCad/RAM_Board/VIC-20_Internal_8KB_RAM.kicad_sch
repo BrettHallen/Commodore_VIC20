@@ -2423,7 +2423,7 @@
 	(text_box "Signals to/from RAM decoder (74LS138)"
 		(exclude_from_sim no)
 		(at 76.2 26.67 0)
-		(size 39.37 34.29)
+		(size 41.91 34.29)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2515,6 +2515,10 @@
 	(no_connect
 		(at 25.4 115.57)
 		(uuid "9ab79abf-d634-4bc3-a885-34a29d76c733")
+	)
+	(no_connect
+		(at 71.12 105.41)
+		(uuid "9b3337e2-197e-4401-8cbc-7b80bc862874")
 	)
 	(no_connect
 		(at 58.42 105.41)
@@ -3055,28 +3059,6 @@
 		(uuid "3e0315cf-4cf7-4209-b7dd-527b9afb3818")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 164.2147 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "+5V"
-		(shape input)
-		(at 71.12 105.41 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3f0518b1-ee7c-42de-aa78-53466a420106")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.9757 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4302,7 +4284,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-20_W7.62mm_Socket"
+		(property "Footprint" "Package_DIP:DIP-20_W7.62mm"
 			(at 48.26 55.88 0)
 			(effects
 				(font
@@ -4789,7 +4771,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Signals"
+		(property "Value" "BLK0 Signals"
 			(at 104.14 49.5299 0)
 			(effects
 				(font
@@ -4956,7 +4938,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-28_W15.24mm_Socket"
+		(property "Footprint" "Package_DIP:DIP-28_W15.24mm"
 			(at 144.78 64.77 0)
 			(effects
 				(font

@@ -3,8 +3,8 @@
 75.04,-35.12,-90.0,top,C2,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,100nF,tht
 80.04,-35.12,0.0,top,J1,,,DIP-18_W7.62mm,UD4,tht
 80.04,-66.12,0.0,top,J2,,,DIP-18_W7.62mm,UE4,tht
-114.04,-35.12,0.0,top,J3,,,PinHeader_1x02_P2.54mm_Vertical,Switch,tht
-59.04,-37.58,0.0,top,J4,,,PinHeader_1x08_P2.54mm_Vertical,RAM Signals,tht
+114.04,-35.12,0.0,top,J3,,,PinHeader_1x02_P2.54mm_Vertical,SW,tht
+59.04,-37.673855,0.0,top,J4,,,PinHeader_1x08_P2.54mm_Vertical,BLK0 Signals,tht
 102.04,-35.12,0.0,top,R1,,,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,10KΩ,tht
-97.42,-47.61,0.0,top,U1,,,DIP-28_W15.24mm_Socket,6264,tht
-63.23,-35.12,0.0,top,U2,,,DIP-20_W7.62mm_Socket,GAL16V8,tht
+97.42,-47.61,0.0,top,U1,,,DIP-28_W15.24mm,6264,tht
+63.23,-35.12,0.0,top,U2,,,DIP-20_W7.62mm,GAL16V8,tht
