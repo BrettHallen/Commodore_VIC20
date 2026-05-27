@@ -15,3 +15,5 @@ _autosave-*
 fp-info-cache
 .DS_Store
 Serial_Breakout/~Serial_Breakout.kicad_pcb.lck
+Internal_8KB_New/KiCad/\#auto_saved_files\#
+*.lck
