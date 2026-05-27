@@ -1,0 +1,19 @@
+﻿pos_x,pos_y,rotation,side,designator,mpn,pack,footprint,value,mount_type
+125.2045,-65.185,180.0,top,C1,,,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,100nF,smt
+92.8195,-63.915,180.0,top,C2,,,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,100nF,smt
+92.9895,-34.07,180.0,top,C3,,,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,100nF,smt
+92.8195,-49.31,180.0,top,C4,,,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,100nF,smt
+92.9465,-79.79,180.0,top,C5,,,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,100nF,smt
+126.4745,-38.515,180.0,top,C6,,,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,100nF,smt
+70.362,-72.17,0.0,top,J1,,,PinHeader_2x08_P2.54mm_Vertical,BLK Decoder,tht
+70.362,-37.245,0.0,top,J2,,,PinHeader_2x08_P2.54mm_Vertical,RAM Decoder,tht
+75.537,-64.55,-90.0,top,J3,,,PinHeader_1x02_P2.54mm_Vertical,Disable/Enable Switch,tht
+100.137,-40.635,0.0,top,J4,,,DIP-18_W7.62mm,UD4,tht
+100.137,-71.635,0.0,top,J5,,,DIP-18_W7.62mm,UE4,tht
+73.902,-61.375,180.0,top,R1,,,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,10KΩ,smt
+120.957,-71.535,0.0,top,U1,,,SOIC-14W_7.5x9mm_P1.27mm,74LS20,smt
+88.572,-71.105,0.0,top,U2,,,SOIC-16W_7.5x10.3mm_P1.27mm,74LS138,smt
+88.777,-41.055,0.0,top,U3,,,SOIC-16W_7.5x10.3mm_P1.27mm,74LS138,smt
+88.777,-55.96,180.0,top,U4,,,SOIC-14W_7.5x9mm_P1.27mm,74HCT30,smt
+88.572,-86.775,0.0,top,U5,,,SOIC-16W_7.5x10.3mm_P1.27mm,74LS157,smt
+120.962,-50.58,0.0,top,U6,,,SOP-32_11.305x20.495mm_P1.27mm,CY62128Exx-xxS,smt
