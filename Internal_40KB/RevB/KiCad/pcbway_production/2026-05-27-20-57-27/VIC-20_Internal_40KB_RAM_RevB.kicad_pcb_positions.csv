@@ -1,0 +1,24 @@
+﻿pos_x,pos_y,rotation,side,designator,mpn,pack,footprint,value,mount_type
+94.325,-36.483,180.0,top,C1,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,200nF,tht
+121.797,-36.356,180.0,top,C2,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,100nF,tht
+94.238,-69.249,180.0,top,C3,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,100nF,tht
+82.173,-69.249,180.0,top,C4,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,100nF,tht
+72.902,-58.454,180.0,top,C5,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,100nF,tht
+112.927,-79.028,0.0,top,C6,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,100nF,tht
+70.362,-37.245,0.0,top,J1,,,PinHeader_2x08_P2.54mm_Vertical,RAM Decoder,tht
+70.362,-72.17,0.0,top,J2,,,PinHeader_2x08_P2.54mm_Vertical,BLK Decoder,tht
+104.906,-67.979,90.0,top,J3,,,PinHeader_1x02_P2.54mm_Vertical,Disable/Enable Switch,tht
+72.775,-63.407,0.0,top,J4,,,PinHeader_1x02_P2.54mm_Vertical,+3KB Disable,tht
+100.137,-40.635,0.0,top,J5,,,DIP-18_W7.62mm,UD4,tht
+100.137,-71.635,0.0,top,J6,,,DIP-18_W7.62mm,UE4,tht
+131.068,-44.865,0.0,top,J7,,,PinHeader_1x01_P2.54mm_Vertical,26,tht
+131.068,-60.105,0.0,top,J8,,,PinHeader_1x01_P2.54mm_Vertical,20,tht
+100.207,-64.169,0.0,top,R1,,,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,10KΩ,tht
+76.077,-58.454,-90.0,top,R2,,,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,10KΩ,tht
+77.347,-72.678,0.0,top,U1,,,DIP-16_W7.62mm,74HCT138,tht
+77.474,-37.118,0.0,top,U2,,,DIP-16_W7.62mm,74HCT138,tht
+113.034,-89.442,90.0,top,U3,,,DIP-14_W7.62mm,74HCT10,tht
+89.285,-72.805,0.0,top,U4,,,DIP-16_W7.62mm,74HCT157,tht
+89.539,-39.531,0.0,top,U5,,,DIP-14_W7.62mm,74HCT30,tht
+79.379,-66.074,90.0,top,U6,,,DIP-16_W7.62mm,74HCT157,tht
+112.907,-39.785,0.0,top,U8,,,DIP-28_W15.24mm,62256,tht
