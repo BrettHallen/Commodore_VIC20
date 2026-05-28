@@ -1,0 +1,20 @@
+﻿pos_x,pos_y,rotation,side,designator,mpn,pack,footprint,value,mount_type
+128.183,-87.445,180.0,top,C1,,,C_Disc_D5.0mm_W2.5mm_P2.50mm,10nF (103),tht
+107.863,-93.385,0.0,top,C2,,,C_Disc_D5.0mm_W2.5mm_P2.50mm,10nF (103),tht
+87.1,-97.32,-90.0,top,J1,,,C64-User-Port-Female,C64-UserPort,smt
+156.6,-83.485,0.0,top,J2,,,Banana_Jack_1Pin,Screw_Terminal_01x01,tht
+156.6,-111.205,0.0,top,J3,,,Banana_Jack_1Pin,Screw_Terminal_01x01,tht
+117.763,-96.075,-90.0,top,Q1,,,TO-92_Inline,2N3906,tht
+117.763,-102.015,-90.0,top,Q2,,,TO-92_Inline,2N3906,tht
+117.763,-107.955,-90.0,top,Q3,,,TO-92_Inline,2N3906,tht
+131.323,-113.185,180.0,top,R1,,,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,510Ω,tht
+131.323,-103.285,180.0,top,R2,,,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1.2MΩ,tht
+105.883,-107.245,0.0,top,R3,,,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,4.7KΩ,tht
+105.883,-103.285,0.0,top,R4,,,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,4.7KΩ,tht
+105.883,-99.325,0.0,top,R5,,,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,4.7KΩ,tht
+131.323,-97.345,180.0,top,R6,,,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,5.6MΩ,tht
+123.853,-93.385,0.0,top,R7,,,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,3.9MΩ,tht
+131.323,-109.225,180.0,top,R8,,,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,330Ω,tht
+140.043,-104.565,-90.0,top,RV1,,,Potentiometer_Piher_PT-10-V10_Vertical,100Ω (101),tht
+145.043,-96.995,90.0,top,RV2,,,Potentiometer_Piher_PT-10-V10_Vertical,100KΩ (104),tht
+106.743,-89.125,90.0,top,U1,,,DIP-8_W7.62mm,NE555P,tht

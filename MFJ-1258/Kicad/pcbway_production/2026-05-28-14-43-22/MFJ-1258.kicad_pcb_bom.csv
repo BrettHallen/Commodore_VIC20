@@ -1,0 +1,14 @@
+﻿Designator,Quantity,Value,Footprint,Package,MPN,DNP,Mount_Type
+"C1, C2",2,10nF (103),C_Disc_D5.0mm_W2.5mm_P2.50mm,,,,tht
+J1,1,C64-UserPort,C64-User-Port-Female,,,,smt
+"J2, J3",2,Screw_Terminal_01x01,Banana_Jack_1Pin,,,,tht
+"Q1, Q2, Q3",3,2N3906,TO-92_Inline,,,,tht
+R1,1,510Ω,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,,,tht
+R2,1,1.2MΩ,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,,,tht
+"R3, R4, R5",3,4.7KΩ,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,,,tht
+R6,1,5.6MΩ,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,,,tht
+R7,1,3.9MΩ,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,,,tht
+R8,1,330Ω,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,,,tht
+RV1,1,100Ω (101),Potentiometer_Piher_PT-10-V10_Vertical,,,,tht
+RV2,1,100KΩ (104),Potentiometer_Piher_PT-10-V10_Vertical,,,,tht
+U1,1,NE555P,DIP-8_W7.62mm,,,,tht
