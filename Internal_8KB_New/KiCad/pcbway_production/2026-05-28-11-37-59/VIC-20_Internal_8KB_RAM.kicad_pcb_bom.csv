@@ -1,9 +1,12 @@
 ﻿Designator,Quantity,Value,Footprint,Package,MPN,DNP,Mount_Type,Description
-"C1, C2, C3, C4",4,100nF,C_Disc_D3.0mm_W2.0mm_P2.50mm,,,,tht,Unpolarized capacitor
+"C1, C2, C3, C4, C5",5,100nF,C_Disc_D3.0mm_W2.0mm_P2.50mm,,,,tht,Unpolarized capacitor
 J1,1,RAM Decoder,PinHeader_2x08_P2.54mm_Vertical,,,,tht,"Generic connector, double row, 02x08, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
 J2,1,UD4,DIP-18_W7.62mm,,,,tht,"Generic connector, double row, 02x09, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
 J3,1,UE4,DIP-18_W7.62mm,,,,tht,"Generic connector, double row, 02x09, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+J4,1,+3KB,PinHeader_1x02_P2.54mm_Vertical,,,,tht,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+R1,1,10KΩ,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,,,tht,Resistor
 U1,1,74HCT04,DIP-14_W7.62mm,,,,tht,Hex Inverter
-U2,1,74HCT138,DIP-16_W7.62mm,,,,tht,"3-to-8 line decoder/multiplexer inverting, DIP-16/SOIC-16/SSOP-16"
-U3,1,6264 SRAM,DIP-28_W15.24mm,,,,tht,"Not in Production, 8Kx8 bit Static RAM, 70/85/100/120/150ns, DIP-28"
-U4,1,74HCT30,DIP-14_W7.62mm,,,,tht,8-input NAND
+U2,1,74HCT138,DIP-16_W7.62mm,,,,tht,Decoder 3 to 8 active low outputs
+U3,1,74HCT30,DIP-14_W7.62mm,,,,tht,8-input NAND
+U4,1,74HCT157,DIP-16_W7.62mm,,,,tht,Quad 2 to 1 line Multiplexer
+U5,1,6264 SRAM,DIP-28_W15.24mm,,,,tht,"Not in Production, 8Kx8 bit Static RAM, 70/85/100/120/150ns, DIP-28"

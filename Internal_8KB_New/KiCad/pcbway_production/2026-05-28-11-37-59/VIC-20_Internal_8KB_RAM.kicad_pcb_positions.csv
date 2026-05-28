@@ -1,0 +1,16 @@
+﻿pos_x,pos_y,rotation,side,designator,mpn,pack,footprint,value,mount_type
+94.422,-60.955,180.0,top,C1,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,100nF,tht
+83.607,-34.92,180.0,top,C2,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,100nF,tht
+94.382,-34.92,180.0,top,C3,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,100nF,tht
+83.627,-60.955,180.0,top,C4,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,100nF,tht
+119.782,-34.92,180.0,top,C5,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,100nF,tht
+71.562,-38.095,0.0,top,J1,,,PinHeader_2x08_P2.54mm_Vertical,RAM Decoder,tht
+100.137,-40.635,0.0,top,J2,,,DIP-18_W7.62mm,UD4,tht
+100.137,-71.635,0.0,top,J3,,,DIP-18_W7.62mm,UE4,tht
+74.102,-61.585,0.0,top,J4,,,PinHeader_1x02_P2.54mm_Vertical,+3KB,tht
+74.102,-76.83,90.0,top,R1,,,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,10KΩ,tht
+89.342,-64.13,0.0,top,U1,,,DIP-14_W7.62mm,74HCT04,tht
+78.547,-38.095,0.0,top,U2,,,DIP-16_W7.62mm,74HCT138,tht
+89.342,-40.635,0.0,top,U3,,,DIP-14_W7.62mm,74HCT30,tht
+78.547,-64.13,0.0,top,U4,,,DIP-16_W7.62mm,74HCT157,tht
+110.932,-38.095,0.0,top,U5,,,DIP-28_W15.24mm,6264 SRAM,tht
