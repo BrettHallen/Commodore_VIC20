@@ -31,7 +31,7 @@ I'm curious how JiffyDOS does its thing so whipped up a simple breakout board fo
 
 Connect the board to the VIC & the disc drive with a DIN-6, and then a 2x4 Dupont-style cable for the logic analyser.<br>
 
-![Serial breakout 3D](/Serial_Breakout_2/Serial_Breakout_DIN_3D.png)
+![Serial breakout 3D](/Serial_Breakout/Serial_Breakout_DIN_3D.png)
 
 # RAM Expansions
 Okay, my mind is full of ideas so it's probably a bit confusing with all these different designs.<br>
