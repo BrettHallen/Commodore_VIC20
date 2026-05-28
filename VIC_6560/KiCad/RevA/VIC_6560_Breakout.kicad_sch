@@ -6,8 +6,8 @@
 	(paper "A5")
 	(title_block
 		(title "Video Interface Chip (VIC) A/V Breakout Board")
-		(date "19-Apr-2025")
-		(rev "1.1-0")
+		(date "19/APR/2025")
+		(rev "A")
 		(company "Brett Hallen")
 		(comment 1 "www.youtube.com/@Brfff")
 	)
@@ -5422,7 +5422,7 @@
 			(uuid "4b611762-b015-4414-9c24-2dabf6765eee")
 		)
 		(instances
-			(project ""
+			(project "VIC_6560_Breakout"
 				(path "/85b77688-0dfa-4431-92cb-742f798a6728"
 					(reference "J1")
 					(unit 1)
@@ -5501,7 +5501,7 @@
 			(uuid "c42acaa5-a686-468a-9080-818715bdc4cb")
 		)
 		(instances
-			(project ""
+			(project "VIC_6560_Breakout"
 				(path "/85b77688-0dfa-4431-92cb-742f798a6728"
 					(reference "J2")
 					(unit 1)
@@ -5683,7 +5683,7 @@
 			(uuid "e805e2c5-c7d2-47bf-bee7-d05b7b991839")
 		)
 		(instances
-			(project ""
+			(project "VIC_6560_Breakout"
 				(path "/85b77688-0dfa-4431-92cb-742f798a6728"
 					(reference "U1")
 					(unit 1)
