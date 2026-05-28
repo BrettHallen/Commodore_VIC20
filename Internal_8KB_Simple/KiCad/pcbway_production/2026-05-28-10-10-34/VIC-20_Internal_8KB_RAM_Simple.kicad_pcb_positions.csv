@@ -1,0 +1,8 @@
+﻿pos_x,pos_y,rotation,side,designator,mpn,pack,footprint,value,mount_type
+117.277,-78.1,0.0,top,C1,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,100nF,tht
+111.567,-42.54,90.0,top,C2,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,100nF,tht
+89.977,-52.7,0.0,top,J1,,,PinHeader_2x08_P2.54mm_Vertical,RAM Decoder,tht
+100.137,-40.635,0.0,top,J2,,,DIP-18_W7.62mm,UD4,tht
+100.137,-71.635,0.0,top,J3,,,DIP-18_W7.62mm,UE4,tht
+96.327,-45.715,0.0,top,U1,,,DIP-28_W15.24mm,6264 SRAM,tht
+122.357,-74.925,180.0,top,U2,,,DIP-14_W7.62mm,74HCT04,tht
