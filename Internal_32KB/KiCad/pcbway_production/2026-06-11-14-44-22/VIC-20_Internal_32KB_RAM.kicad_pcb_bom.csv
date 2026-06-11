@@ -1,0 +1,11 @@
+﻿Designator,Quantity,Value,Footprint,Package,MPN,DNP,Mount_Type,Description
+"C1, C2, C3",3,100nF,C_Disc_D3.0mm_W2.0mm_P2.50mm,,,,tht,Unpolarized capacitor
+J1,1,UD4,DIP-18_W7.62mm,,,,tht,"Generic connector, double row, 02x09, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+J2,1,UE4,DIP-18_W7.62mm,,,,tht,"Generic connector, double row, 02x09, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+J3,1,RAM Decoder,PinHeader_2x08_P2.54mm_Vertical,,,,tht,"Generic connector, double row, 02x08, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+J4,1,BLK Decoder,PinHeader_2x08_P2.54mm_Vertical,,,,tht,"Generic connector, double row, 02x08, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+J5,1,Disable/Enable Switch,PinHeader_1x02_P2.54mm_Vertical,,,,tht,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+R1,1,10KΩ,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,,,tht,Resistor
+U1,1,ATF16V8,DIP-20_W7.62mm,,,,tht,"High-performance EE PLD, PAL Device Emulation / PAL Replacement, DIP-20"
+U2,1,74HCT138,DIP-16_W7.62mm,,,,tht,"3-to-8 line decoder/multiplexer inverting, DIP-16/SOIC-16/SSOP-16"
+U3,1,62256,DIP-28_W15.24mm,,,,tht,"32,768-word × 8-bit High Speed CMOS Static RAM, 70ns, DIP-28"
