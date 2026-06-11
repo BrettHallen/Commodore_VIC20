@@ -1,0 +1,57 @@
+Name       VIC-20_32KB.pld;
+Partno     ;
+Date       11/JUN/2026;
+Revision   B;
+Designer   Brett Hallen;
+Company    ;
+Assembly   ;
+Location   ;
+Device     G16V8;
+
+/* INPUT PINS */
+PIN  1 = PHI2;   /* high = CPU access, low = VIC (6560/6561) access     */
+PIN  2 = CA13;   /* A13 address from CPU                                */
+PIN  3 = VA13;   /* A13 address from VIC, high during VIC access to RAM */
+PIN  4 = CA14;
+PIN  5 = CA15;
+PIN  6 = !BLK1;  /* BLK1 select: 0x2000-0x3FFF                          */
+PIN  7 = !BLK2;  /* BLK2 select: 0x4000-0x5FFF                          */
+PIN  8 = !BLK3;  /* BLK3 select: 0x6000-0x7FFF                          */
+PIN  9 = !BLK5;  /* future expansion                                    */
+PIN 11 = ENABLE; /* switch that enables or disables the expansion       */
+
+/* OUTPUT PINS */
+PIN 12 = !RAM_CS;   /* select for the 32KB expansion                */
+PIN 13 = RAM_A13;   /* A13 address, depends on CPU or VIC accessing */
+PIN 14 = RAM_A14;   /* A14 address, as above                        */
+PIN 15 = !BLK5_OUT; /* future expansion                             */
+PIN 16 = !BLK3_OUT; /* for passing back to motherboard              */
+PIN 17 = !BLK2_OUT;
+PIN 18 = !BLK1_OUT;
+
+/* POWER PINS */
+/* PIN 10 = GND; */
+/* PIN 20 = VCC; */
+
+/* EQUATIONS */
+/* RAM_CS select (active low)                                             */
+/* PHI2 = high (CPU access) and A15 = low (BLK0 to BLK3), or              */
+/* PHI2 = low (VIC access) & VA13 = high                                  */
+RAM_CS = (PHI2 & !CA15) # (!PHI2 & VA13);
+/* A13 & A14 on 32KB SRAM should be low during VIC access (PHI2 is low)   */
+/* VIC access: When PHI2 = low, RAM_A13/RAM_A14 = low (BLK0 only)         */
+/* CPU access: When PHI2 = high, pass A13 & A14 to RAM expansion          */
+RAM_A13 = (PHI2 & CA13);
+RAM_A14 = (PHI2 & CA14);
+/* BLKx select (active low)
+/* We need to keep BLKx select high so that our RAM is not disconnected   */
+/* from the data bus (it expects these BLKs to be on the cartridge bus    */
+/* But if the expansion is disabled then we pass the BLK signal through   */
+/* in case there is a cartridge that needs it                             */ 
+/* ENABLE = high, BLKx is passed to motherboard, or expansion is disabled */
+/* ENABLE = low, BLKx_OUT is always high and our expansion is enabled     */
+BLK1_OUT = (ENABLE & BLK1);
+BLK2_OUT = (ENABLE & BLK2);
+BLK3_OUT = (ENABLE & BLK3);
+/* Future expansion (needs extra 6264 SRAM), just pass through for now    */
+BLK5_OUT = BLK5; 
