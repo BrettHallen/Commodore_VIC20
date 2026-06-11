@@ -5,6 +5,7 @@ Requires two [DIP-16 breakout boards](https://github.com/BrettHallen/Conversion_
 
 ## Status
 26-May-2026: complete re-design of my original idea, pending farbication & testing
+11-Jun-2026: tested the re-design, it's "working" but has screen memory issues, fixed in next revision
 
 ## Purpose
 - Save having to source replacement 2114 chips in case RAM is faulty;
@@ -16,6 +17,7 @@ Requires two [DIP-16 breakout boards](https://github.com/BrettHallen/Conversion_
 ## YouTube Videos
 - [Simple KiCad For Simple Vintage Computer Hobbyists: Part 5 (VIC-20 RAM Expansion)](https://youtu.be/WQpgBGNAkP0)
 - [Commodore VIC-20 Internal RAM Replacement: Part 1](https://youtu.be/0KduuzFBmz8)
+- [Commodore VIC-20 Internal RAM Replacement: Part 2](https://youtu.be/WdcPidc4c6I)
 
 ## Important Note
 This information is provided to you completely free - use at your own risk.<br>
@@ -73,3 +75,8 @@ This is done by relocating the 74LS138 to the expansion daughterboard and using 
 We should be able to fill in the BLK1/2/3 RAM by intercepting the associated ~BLK1, ~BLK2 and ~BLK3 select signals from the BLK decoder and using as the select signal for our RAM.<br>
 
 Importantly we want to also be able to disable this additional RAM to allow software designed for the unexpanded/+3KB expanded VIC-20 to work correctly.  This can be done by connecting the ~BLK0/~BLK1/~BLK2 select signals via a multiplexor connected to an external switch that determines if the ~BLK1/2/3 select signals are passed back to the VIC or not.<br>
+
+### CPU vs VIC RAM Access
+The CPU (6502) and VIC (6560/6561) share access to the RAM, alternating depending on the state of the SΦ2 clock.  When the clock is high the CPU is accessing the RAM and when the clock is low it is the VIC's turn.<br>
+
+Importantly the screen memory is in BLK0 and thus A13 and A14 are low.  My design failed to account for this and this results in the VIC accessing anywhere in the BLK0 to BLK3 range depending on what the status of A13 and A14 was.  I have improved the design to account for this, to be tested.
