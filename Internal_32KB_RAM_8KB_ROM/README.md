@@ -1,10 +1,11 @@
-# Internal 32KB RAM Expansion
-My attempt to create a FAT VIC with a full 32KB internal RAM expansion without need for an external cartridge.<br>
+# Internal BLJK0/1/2/3/5 Expansion
+My attempt to create a FAT VIC with a full 32KB internal RAM in BLK0/1/2/3 and an additioanl 8KB ROM or RAM in BLK5 without need for an external cartridge.<br>
 
 Requires two [DIP-16 breakout boards](https://github.com/BrettHallen/Conversion_Boards/tree/main/DIP-16_Breakout) to replace the 74LS138 decoders.<br>
 
 ## Status
 26-May-2026: complete re-design of my original idea, pending farbication & testing
+17-Jun-2026: further re-design completed, pending fabrication & testing
 
 ## Purpose
 - Save having to source replacement 2114 chips in case RAM is faulty;
@@ -16,6 +17,7 @@ Requires two [DIP-16 breakout boards](https://github.com/BrettHallen/Conversion_
 ## YouTube Videos
 - [Simple KiCad For Simple Vintage Computer Hobbyists: Part 5 (VIC-20 RAM Expansion)](https://youtu.be/WQpgBGNAkP0)
 - [Commodore VIC-20 Internal RAM Replacement: Part 1](https://youtu.be/0KduuzFBmz8)
+- [Commodore VIC-20 Internal RAM Replacement: Part 2](https://youtu.be/WdcPidc4c6I)
 
 ## Important Note
 This information is provided to you completely free - use at your own risk.<br>
@@ -56,6 +58,22 @@ BLK2 (+16KB)
 BLK3 (+24KB)
 6000    0110 0000 0000 0000
 7FFF    0111 1111 1111 1111
+
+BLK4 (Character ROM, VIC, VIAs, I/O, Colour RAM)
+8000
+9FFF
+
+BLK5 (8KB ROM or RAM)
+A000
+BFFF
+
+BLK6 (BASIC)
+C000
+DFFF
+
+BLK7 (Kernal/Kernel)
+E000
+FFFF
 ```
 
 [Commodore VIC-20 Memory Map](https://vic20reloaded.com/commodore-vic-20-memory-map/)
@@ -73,3 +91,7 @@ This is done by relocating the 74LS138 to the expansion daughterboard and using 
 We should be able to fill in the BLK1/2/3 RAM by intercepting the associated ~BLK1, ~BLK2 and ~BLK3 select signals from the BLK decoder and using as the select signal for our RAM.<br>
 
 Importantly we want to also be able to disable this additional RAM to allow software designed for the unexpanded/+3KB expanded VIC-20 to work correctly.  This can be done by connecting the ~BLK0/~BLK1/~BLK2 select signals via a multiplexor connected to an external switch that determines if the ~BLK1/2/3 select signals are passed back to the VIC or not.<br>
+
+### BLK5 Expansion
+This can have RAM or ROM, but the RAM isn't accessible from BASIC as it needs to be contiguous (BLK4 is in the way).  One possible use is to include the Super Expander ROM on the board.<br>
+
