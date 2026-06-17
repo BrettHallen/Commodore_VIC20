@@ -1,0 +1,78 @@
+LISTING FOR LOGIC DESCRIPTION FILE: VIC-20_40KB.pld                  Page 1
+
+CUPL(WM): Universal Compiler for Programmable Logic
+Version 5.0a Serial# MW-10400000
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+Created Wed Jun 17 10:25:03 2026
+
+  1:Name       VIC-20_40KB.pld;
+  2:Partno     ;
+  3:Date       17/JUN/2026;
+  4:Revision   A;
+  5:Designer   Brett Hallen;
+  6:Company    ;
+  7:Assembly   ;
+  8:Location   ;
+  9:Device     G16V8;
+ 10:
+ 11:/* INPUT PINS */
+ 12:PIN  1 = PHI2;   /* high = CPU access, low = VIC (6560/6561) access     */
+ 13:PIN  2 = CA13;   /* A13 address from CPU                                */
+ 14:PIN  3 = VA13;   /* A13 address from VIC, high during VIC access to RAM */
+ 15:PIN  4 = CA14;
+ 16:PIN  5 = CA15;
+ 17:PIN  6 = !BLK1;  /* BLK1 select: 0x2000-0x3FFF                          */
+ 18:PIN  7 = !BLK2;  /* BLK2 select: 0x4000-0x5FFF                          */
+ 19:PIN  8 = !BLK3;  /* BLK3 select: 0x6000-0x7FFF                          */
+ 20:PIN  9 = !BLK5;  /* BLK5 select: 0xA000-0xBFFF                          */
+ 21:PIN 11 = ENABLE; /* switch that enables or disables the expansion       */
+ 22:
+ 23:/* OUTPUT PINS */
+ 24:PIN 12 = !RAM_CS;   /* select for the 32KB expansion                */
+ 25:PIN 13 = RAM_A13;   /* A13 address, depends on CPU or VIC accessing */
+ 26:PIN 14 = RAM_A14;   /* A14 address, as above                        */
+ 27:PIN 15 = !BLK5_OUT; /* for passing back to motherboard              */
+ 28:PIN 16 = !BLK3_OUT;
+ 29:PIN 17 = !BLK2_OUT;
+ 30:PIN 18 = !BLK1_OUT;
+ 31:
+ 32:/* POWER PINS    */
+ 33:/* PIN 10 = GND; */
+ 34:/* PIN 20 = VCC; */
+ 35:
+ 36:/* EQUATIONS */
+ 37:/* RAM_CS select (active low)                                           */
+ 38:/* PHI2 = high (CPU access) and A15 = low (BLK0 to BLK3), or            */
+ 39:/* PHI2 = low (VIC access) & VA13 = high                                */
+ 40:RAM_CS = (PHI2 & !CA15) # (!PHI2 & VA13);
+ 41:/* A13 & A14 on 32KB SRAM should be low during VIC access (PHI2 is low) */
+ 42:/* VIC access: When PHI2 = low, A13 & A14 = low (BLK0 only)             */
+ 43:/* CPU access: When PHI2 = high, pass A13 & A14 to RAM expansion        */
+ 44:RAM_A13 = (PHI2 & CA13);
+ 45:RAM_A14 = (PHI2 & CA14);
+ 46:/* BLKx select (active low)
+ 47:/* We need to keep BLKx select high so that our RAM is not disconnected */
+ 48:/* from the data bus (it expects these BLKs to be on the cartridge bus) */
+ 49:/* But if the expansion is disabled then we pass the BLK signal through */
+ 50:/* in case there is a cartridge that needs it                           */ 
+ 51:/* ENABLE = high, BLKx is passed to motherboard, expansion is disabled  */
+ 52:/* ENABLE = low, BLKx_OUT is always high, expansion is enabled          */
+ 53:BLK1_OUT = (ENABLE & BLK1);
+
+LISTING FOR LOGIC DESCRIPTION FILE: VIC-20_40KB.pld                  Page 2
+
+CUPL(WM): Universal Compiler for Programmable Logic
+Version 5.0a Serial# MW-10400000
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+Created Wed Jun 17 10:25:03 2026
+
+ 54:BLK2_OUT = (ENABLE & BLK2);
+ 55:BLK3_OUT = (ENABLE & BLK3);
+ 56:BLK5_OUT = (ENABLE & BLK5);
+ 57:
+ 58:
+
+
+
+Jedec Fuse Checksum       (26b0)
+Jedec Transmit Checksum   (aa34)

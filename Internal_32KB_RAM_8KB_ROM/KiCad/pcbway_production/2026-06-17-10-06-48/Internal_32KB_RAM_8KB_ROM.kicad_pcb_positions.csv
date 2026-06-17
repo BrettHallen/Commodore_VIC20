@@ -1,0 +1,17 @@
+﻿pos_x,pos_y,rotation,side,designator,mpn,pack,footprint,value,mount_type
+94.422,-37.46,180.0,top,C1,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,100nF,tht
+84.262,-37.46,180.0,top,C2,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,100nF,tht
+120.457,-37.46,180.0,top,C3,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,100nF,tht
+140.142,-37.46,180.0,top,C4,,,C_Disc_D3.0mm_W2.0mm_P2.50mm,100nF,tht
+100.137,-40.635,0.0,top,J1,,,DIP-18_W7.62mm,UD4,tht
+100.137,-71.635,0.0,top,J2,,,DIP-18_W7.62mm,UE4,tht
+69.657,-35.555,0.0,top,J3,,,PinHeader_2x08_P2.54mm_Vertical,RAM Decoder,tht
+69.657,-57.78,0.0,top,J4,,,PinHeader_2x08_P2.54mm_Vertical,BLK Decoder,tht
+79.182,-71.115,90.0,top,J5,,,PinHeader_1x02_P2.54mm_Vertical,Disable/Enable Switch,tht
+126.807,-83.18,90.0,top,J6,,,PinHeader_1x03_P2.54mm_Vertical,BLK5 Write Enable,tht
+76.642,-75.56,0.0,top,R1,,,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,10KΩ,tht
+76.007,-35.555,-90.0,top,RN1,,,R_Array_SIP9,10KΩ,tht
+89.342,-40.635,0.0,top,U1,,,DIP-20_W7.62mm,ATF16V8,tht
+79.182,-40.635,0.0,top,U2,,,DIP-16_W7.62mm,74HCT138,tht
+111.567,-40.635,0.0,top,U3,,,DIP-28_W15.24mm,62256,tht
+131.252,-40.635,0.0,top,U4,,,DIP-28_W15.24mm,2864,tht
