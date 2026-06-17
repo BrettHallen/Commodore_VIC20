@@ -60,18 +60,10 @@ Just the 8KB for BLK0, nothing else.  As simple as my simple mind can make it.
 
 ![3D view of RAM upgrade board](/Internal_8KB_Simple/VIC-20_Internal_8KB_RAM_Simple.png)
 
-## [Internal 32KB RAM Expansion](/Internal_32KB/) - DESIGNED
-Let's see if we can make a FAT VIC with a full 32KB internal RAM that can be disabled externally when required.  I've only made the +24KB in BLK1/2/3 switchable ... the 40KB Rev. B has both BLK0 and BLK1/2/3 switchable.<br>
-
-![3D view of RAM upgrade board](/Internal_32KB/VIC-20_Internal_32KB_3D.png)
-
 ## [Internal 40KB RAM Expansion](/Internal_40KB/) - DESIGNED
-I was asked about 35KB expansion so I've attempted that here.<br>
+I've obsoleted the 32KB design and gone for this: the full 32KB of RAM in BLK0/1/2/3 plus an addition 8KB RAM or ROM in BLK5.<br>
 
-There's two versions:
-- [Rev. A](/Internal_40KB/RevA/): all surface mount because of the number of chips
-- [Rev. B](/Internal_40KB/RevB/): a "simpler" version based on the 32KB design (so, thoughhole) with the additional 8KB (6264) piggybacked on top of the 32KB (62256)
+The BLK1/2/3/5 are switchable off externally for software compatibility, and the BLK5 can be filled with either a 6264 SRAM or 2764/2864 (E)EPROM.  There is a header to switch whether it is writable (RAM) or not (ROM).<br>
 
-![3D view of RAM upgrade board](/Internal_40KB/RevA/VIC-20_Internal_40KB_RAM_RevA_3D.png)
+![The final boss of internal RAM expansions](/Internal_32KB_RAM_8KB_ROM/Internal_32KB_RAM_8KB_ROM.png)
 
-![3D view of RAM upgrade board](/Internal_40KB/RevB/VIC-20_Internal_40KB_RAM_RevB_3D_1.png)
