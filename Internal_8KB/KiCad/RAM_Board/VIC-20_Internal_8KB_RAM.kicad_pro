@@ -453,6 +453,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -463,7 +464,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "VIC20_Internal_8KB_RAM.kicad_pro",
+    "filename": "VIC-20_Internal_8KB_RAM.kicad_pro",
     "version": 3
   },
   "net_settings": {
